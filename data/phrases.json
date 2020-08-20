@@ -1,0 +1,63 @@
+[
+    {
+      "id": 1,
+      "type": "day-to-day",
+      "phrase": "How is it going?",
+      "frase": "Como vai?"
+    },
+    {
+      "id": 2,
+      "type": "general",
+      "phrase": "Long time no see! ",
+      "frase": "Há quanto tempo!"
+    },
+    {
+        "id": 3,
+        "type": "general",
+        "phrase": "What have you been up to? ",
+        "frase": "O que anda fazendo?"
+    },
+    {
+        "id": 4,
+        "type": "general",
+        "phrase": "Are you with me? ",
+        "frase": "Está entendendo o que digo?"
+    },
+    {
+        "id": 5,
+        "type": "general",
+        "phrase": "Can’t complain ",
+        "frase": "Não posso me queixar"
+    },
+    {
+        "id": 6,
+        "type": "general",
+        "phrase": "That’s a good one",
+        "frase": "Essa é uma boa piada"
+    },
+    {
+        "id": 7,
+        "type": "general",
+        "phrase": "It’s very kind of you! ",
+        "frase": "que amável da sua parte"
+    },
+    {
+        "id": 8,
+        "type": "general",
+        "phrase": "Thank you anyway ",
+        "frase": "Obrigado assim mesmo "
+    },
+    {
+        "id": 9,
+        "type": "general",
+        "phrase": " Thank you in advance!",
+        "frase": "Obrigado desde já "
+    },
+    {
+        "id": 10,
+        "type": "general",
+        "phrase": " No worries",
+        "frase": " Não há com o que se preocupar, tranquilo."
+    }
+]
+    
