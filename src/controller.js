@@ -1,4 +1,4 @@
-const phrases = require('./data/phrases.json')
+const phrases = require('../data/phrases.json')
 
 const randomPhrase = () => {
   return phrases[Math.floor(Math.random() * phrases.length)]
