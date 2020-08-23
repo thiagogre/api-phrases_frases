@@ -10,8 +10,10 @@ const pullPhrases = () => {
             const phrase = $(element).text()
             phrases[index] = {"id":index, phrase}
         })
-        fs.writeFileSync("data.json", JSON.stringify(phrases, null, 2))
+        fs.writeFile("data.json", JSON.stringify(phrases, null, 2), (err) => {
+            if(err) throw err
+        })
     })
 }
 
-module.exports = { pullPhrases }
+module.exports = pullPhrases
