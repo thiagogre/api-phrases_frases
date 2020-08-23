@@ -8,7 +8,7 @@ app.use((req, res, next) => {
 })
 
 app.get('/', (req, res) => {
-  res.send('Try /random_phrase, /random_seven, /phrases/random, or /phrases/seven')
+  res.send('Type /phrases/random, or /phrases/seven')
 })
 
 app.get('/phrases/random', (req, res) => {
