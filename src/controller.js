@@ -1,4 +1,6 @@
-const phrases = require('../data/phrases.json')
+const {pullPhrases} = require('./scrapping.js')
+
+const phrases = require('../data.json')
 
 const randomPhrase = () => {
   return phrases[Math.floor(Math.random() * phrases.length)]
@@ -20,16 +22,11 @@ const randomN = (phraseArray, n) => {
   })
 }
 
-const randomTen = () => randomN(phrases, 10)
-
-const phraseByType = (type, n) => {
-  return randomN(phrases.filter(phrase => phrase.type === type), n)
-}
+const randomSeven = () => randomN(phrases, 7)
 
 module.exports = { 
     phrases,
     randomPhrase,
     randomN,
-    randomTen,
-    phraseByType
+    randomSeven
 }

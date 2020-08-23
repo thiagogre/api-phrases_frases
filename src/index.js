@@ -1,5 +1,5 @@
 const express = require('express')
-const { randomPhrase, randomTen, phraseByType } = require('./controller')
+const { randomPhrase, randomSeven } = require('./controller')
 const app = express()
 
 app.use((req, res, next) => {
@@ -8,31 +8,15 @@ app.use((req, res, next) => {
 })
 
 app.get('/', (req, res) => {
-  res.send('Try /random_phrase, /random_ten, /phrases/random, or /phrases/ten')
-})
-
-app.get('/random_phrase', (req, res) => {
-  res.json(randomPhrase())
-})
-
-app.get('/random_ten', (req, res) => {
-  res.json(randomTen())
+  res.send('Try /random_phrase, /random_seven, /phrases/random, or /phrases/seven')
 })
 
 app.get('/phrases/random', (req, res) => {
   res.json(randomPhrase())
 })
 
-app.get('/phrases/ten', (req, res) => {
-  res.json(randomTen())
-})
-
-app.get('/phrases/:type/random', (req, res) => {
-  res.json(phraseByType(req.params.type, 1))
-})
-
-app.get('/phrases/:type/ten', (req, res) => {
-  res.json(phraseByType(req.params.type, 10))
+app.get('/phrases/seven', (req, res) => {
+  res.json(randomSeven())
 })
 
 app.listen(3000, () => console.log(`listening on 3000`))
