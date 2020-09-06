@@ -17,11 +17,10 @@
 </p>
 
 <h4 align="center">
-	  <img alt="edit" title="#Api-phrases" src="./assets/phrases.gif" style="max-width: 80%;">
+	🚧 Api Phrase2Frase (Node.js/express/cheerio/axios) 🚧 In Progress... 🚀
 </h4>
-
 <h4 align="center">
-	🚧 Api Phrase to Frase (Node.js/express/cheerio/axios) 🚧 In Progress... 🚀
+	  <img alt="edit" title="#Api-phrases" src="./assets/phrases_to_frases.gif">
 </h4>
 
 <p align="center">
