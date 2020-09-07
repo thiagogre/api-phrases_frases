@@ -15,6 +15,10 @@
     <img alt="Built by Thiago" src="https://img.shields.io/badge/built%20by-Thiago%20Gregorio-%237519C1">
   </a>
 </p>
+<p align="center">
+  <img align="center" alt="with_love" src="https://forthebadge.com/images/badges/built-with-love.svg" />
+  <img align="center" alt="js" src="https://forthebadge.com/images/badges/made-with-javascript.svg" />
+<p>
 
 <h4 align="center">
 	🚧 Api Phrase2Frase (Node.js/express/cheerio/axios) 🚧 In Progress... 🚀
