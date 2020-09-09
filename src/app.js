@@ -4,10 +4,10 @@ const mongoose = require('mongoose')
 
 const app = express()
 
-// const name = process.env.DB_NAME
-// const pass = process.env.DB_PASSWORD
+const name = process.env.DB_NAME
+const password = process.env.DB_PASSWORD
 
-mongoose.connect(`mongodb+srv://dev:HieoYjMpCxZppiQr@developer.kuj4m.gcp.mongodb.net/test?retryWrites=true&w=majority`, { 
+mongoose.connect(`mongodb+srv://dev:${password}@developer.kuj4m.gcp.mongodb.net/${name}?retryWrites=true&w=majority`, { 
     useNewUrlParser: true,
     useUnifiedTopology: true
 }).then(() => {
