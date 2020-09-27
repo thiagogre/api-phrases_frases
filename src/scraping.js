@@ -27,11 +27,11 @@ const pullPhrases = () => {
 
         let n = 0
         for (i of phrases) {
-            phrases[n]['phrase'] = refactor_store_items[n][0]
-            phrases[n]['frase'] = refactor_store_items[n][1]
+            phrases[n]['phrase'] = refactor_store_items[n][0].substring(0, refactor_store_items[n][0].length - 1)
+            phrases[n]['frase'] = refactor_store_items[n][1].substring(1)
             n += 1
         }
-        
+
         fs.writeFile("data.json", JSON.stringify(phrases, null, 2), (err) => {
             if(err) throw err
         })
