@@ -1,158 +1,197 @@
 [
   {
     "id": 0,
-    "phrase": "Good morning – Bom dia"
+    "phrase": "Good morning ",
+    "frase": " Bom dia"
   },
   {
     "id": 1,
-    "phrase": "Morning (informal) - Bom dia"
+    "phrase": "Morning (informal) ",
+    "frase": " Bom dia"
   },
   {
     "id": 2,
-    "phrase": "What a nice day – Que dia bonito"
+    "phrase": "What a nice day ",
+    "frase": " Que dia bonito"
   },
   {
     "id": 3,
-    "phrase": "What time is it? – Que horas são?"
+    "phrase": "What time is it? ",
+    "frase": " Que horas são?"
   },
   {
     "id": 4,
-    "phrase": "Are you busy - Você está ocupado?"
+    "phrase": "Are you busy ",
+    "frase": " Você está ocupado?"
   },
   {
     "id": 5,
-    "phrase": "What day is it today? - Que dia é hoje?"
+    "phrase": "What day is it today? ",
+    "frase": " Que dia é hoje?"
   },
   {
     "id": 6,
-    "phrase": "I'm feeling great  today - Eu estou me sentindo ótimo hoje"
+    "phrase": "I'm feeling great  today ",
+    "frase": " Eu estou me sentindo ótimo hoje"
   },
   {
     "id": 7,
-    "phrase": "I'm running a little late - Eu estou um pouco atrasado"
+    "phrase": "I'm running a little late ",
+    "frase": " Eu estou um pouco atrasado"
   },
   {
     "id": 8,
-    "phrase": "What's for breakfast today? - O que tem para o café da manhã hoje?"
+    "phrase": "What's for breakfast today? ",
+    "frase": " O que tem para o café da manhã hoje?"
   },
   {
     "id": 9,
-    "phrase": "I didn't sleep very well, I had a nightmare - Eu não dormi muito bem, eu tive um pesadelo"
+    "phrase": "I didn't sleep very well, I had a nightmare ",
+    "frase": " Eu não dormi muito bem, eu tive um pesadelo"
   },
   {
     "id": 10,
-    "phrase": "How was school today? - Como foi a escola hoje?"
+    "phrase": "How was school today? ",
+    "frase": " Como foi a escola hoje?"
   },
   {
     "id": 11,
-    "phrase": "Faking till I make it – Fingindo até que aconteça"
+    "phrase": "Faking till I make it ",
+    "frase": " Fingindo até que aconteça"
   },
   {
     "id": 12,
-    "phrase": "Could you set the table, please? – Você poderia arrumar a mesa, por favor?"
+    "phrase": "Could you set the table, please? ",
+    "frase": " Você poderia arrumar a mesa, por favor?"
   },
   {
     "id": 13,
-    "phrase": "I'm hungry – Estou com fome"
+    "phrase": "I'm hungry ",
+    "frase": " Estou com fome"
   },
   {
     "id": 14,
-    "phrase": "I'm thirsty - Eu estou com sede"
+    "phrase": "I'm thirsty ",
+    "frase": " Eu estou com sede"
   },
   {
     "id": 15,
-    "phrase": "Are you ready? – Você está pronto?"
+    "phrase": "Are you ready? ",
+    "frase": " Você está pronto?"
   },
   {
     "id": 16,
-    "phrase": "Can I get you some water? - Quer que eu pegue um pouco de água?"
+    "phrase": "Can I get you some water? ",
+    "frase": " Quer que eu pegue um pouco de água?"
   },
   {
     "id": 17,
-    "phrase": "Could you help me running the dishes? - Você poderia me ajudar a lavar a louça?"
+    "phrase": "Could you help me running the dishes? ",
+    "frase": " Você poderia me ajudar a lavar a louça?"
   },
   {
     "id": 18,
-    "phrase": "It's too hot today! – Está muito quente hoje!"
+    "phrase": "It's too hot today! ",
+    "frase": " Está muito quente hoje!"
   },
   {
     "id": 19,
-    "phrase": "Would you like to come over and play some video game? – Você quer vir aqui e jogar um pouco de videogame?"
+    "phrase": "Would you like to come over and play some video game? ",
+    "frase": " Você quer vir aqui e jogar um pouco de videogame?"
   },
   {
     "id": 20,
-    "phrase": "I have to go to the supermarket – Eu tenho que ir ao supermercado"
+    "phrase": "I have to go to the supermarket ",
+    "frase": " Eu tenho que ir ao supermercado"
   },
   {
     "id": 21,
-    "phrase": "I need to run some errands - Eu preciso fazer algumas tarefas"
+    "phrase": "I need to run some errands ",
+    "frase": " Eu preciso fazer algumas tarefas"
   },
   {
     "id": 22,
-    "phrase": "Do you wanna cook? – Você quer cozinhar?"
+    "phrase": "Do you wanna cook? ",
+    "frase": " Você quer cozinhar?"
   },
   {
     "id": 23,
-    "phrase": "Can you switch the light on? – Você pode ligar a luz?"
+    "phrase": "Can you switch the light on? ",
+    "frase": " Você pode ligar a luz?"
   },
   {
     "id": 24,
-    "phrase": "Have you fed the dog? – Você alimentou o cachorro?"
+    "phrase": "Have you fed the dog? ",
+    "frase": " Você alimentou o cachorro?"
   },
   {
     "id": 25,
-    "phrase": "How was your day? – Como foi seu dia?"
+    "phrase": "How was your day? ",
+    "frase": " Como foi seu dia?"
   },
   {
     "id": 26,
-    "phrase": "How is your day shaping up? - Como está sendo seu dia?"
+    "phrase": "How is your day shaping up? ",
+    "frase": " Como está sendo seu dia?"
   },
   {
     "id": 27,
-    "phrase": "I'll be waiting for you outside – Eu estarei esperando por você lá fora"
+    "phrase": "I'll be waiting for you outside ",
+    "frase": " Eu estarei esperando por você lá fora"
   },
   {
     "id": 28,
-    "phrase": "Count on me - Conte comigo"
+    "phrase": "Count on me ",
+    "frase": " Conte comigo"
   },
   {
     "id": 29,
-    "phrase": "Is there anything good on TV? - Tem alguma coisa boa na TV?"
+    "phrase": "Is there anything good on TV? ",
+    "frase": " Tem alguma coisa boa na TV?"
   },
   {
     "id": 30,
-    "phrase": "Are you up to anything tomorrow? – Vai fazer alguma coisa amanhã?"
+    "phrase": "Are you up to anything tomorrow? ",
+    "frase": " Vai fazer alguma coisa amanhã?"
   },
   {
     "id": 31,
-    "phrase": "Are you ready to order? – Já está pronta para pedir?"
+    "phrase": "Are you ready to order? ",
+    "frase": " Já está pronta para pedir?"
   },
   {
     "id": 32,
-    "phrase": "Let's eat out tonight! – Vamos comer fora hoje à noite!"
+    "phrase": "Let's eat out tonight! ",
+    "frase": " Vamos comer fora hoje à noite!"
   },
   {
     "id": 33,
-    "phrase": "What would you like for dinner? – O que você gostaria para o jantar?"
+    "phrase": "What would you like for dinner? ",
+    "frase": " O que você gostaria para o jantar?"
   },
   {
     "id": 34,
-    "phrase": "I'm taking a shower and going to bed - Eu vou tomar um banho e ir para a cama"
+    "phrase": "I'm taking a shower and going to bed ",
+    "frase": " Eu vou tomar um banho e ir para a cama"
   },
   {
     "id": 35,
-    "phrase": "I have to wake in a few – Eu tenho que acordar às 7 horas"
+    "phrase": "I have to wake in a few ",
+    "frase": " Eu tenho que acordar às 7 horas"
   },
   {
     "id": 36,
-    "phrase": "I'm exhausted - Estou exausto"
+    "phrase": "I'm exhausted ",
+    "frase": " Estou exausto"
   },
   {
     "id": 37,
-    "phrase": "I'm going to bed – Eu vou para a cama"
+    "phrase": "I'm going to bed ",
+    "frase": " Eu vou para a cama"
   },
   {
     "id": 38,
-    "phrase": "Good night. Sweet dreams – Boa noite. Bons sonhos"
+    "phrase": "Good night. Sweet dreams ",
+    "frase": " Boa noite. Bons sonhos"
   }
 ]
