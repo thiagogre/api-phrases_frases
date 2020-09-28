@@ -12,17 +12,12 @@ const pullPhrases = async () => {
     })
 
     const store_items = phrases.map(phrase => (phrase['phrase']))
-    const refactor_store_items = store_items.map(item => item.includes('-') ? item.split('-'):item.split('–'))
+    const split_phrases = store_items.map(item => item.includes('-') ? item.split('-'):item.split('–'))
+    
     phrases.forEach((phrase, index) => {
-        phrase['phrase'] = refactor_store_items[index][0].substring(0, refactor_store_items[index][0].length - 1)
-        phrase['frase'] = refactor_store_items[index][1].substring(1)
+        phrase['phrase'] = split_phrases[index][0].substring(0, split_phrases[index][0].length - 1)
+        phrase['frase'] = split_phrases[index][1].substring(1)
     })
-    // let n = 0
-    // for (i of phrases) {
-        
-        
-    //     n += 1
-    // }
 
     fs.writeFile("data.json", JSON.stringify(phrases, null, 2), (err) => {
         if(err) throw err
