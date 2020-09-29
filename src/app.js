@@ -10,12 +10,12 @@ const name = process.env.DB_NAME
 const pass = process.env.DB_PASSWORD
 
 mongoose.connect(`mongodb+srv://dev:${pass}@developer.kuj4m.gcp.mongodb.net/${name}?retryWrites=true&w=majority`, { 
-    useNewUrlParser: true,
-    useUnifiedTopology: true
+  useNewUrlParser: true,
+  useUnifiedTopology: true
 }).then(() => {
-    console.log("Connection Done")
+  console.log("Connection Done")
 }).catch((err) => {
-    console.log(err)
+  console.log(err)
 })
 
 app.use(express.json())
