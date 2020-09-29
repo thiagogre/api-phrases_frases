@@ -52,6 +52,7 @@ The following tools have been used in the construction of the project so far:
 - Express
 - Cheerio
 - Axios
+- MongoDB
 
 ---
 
