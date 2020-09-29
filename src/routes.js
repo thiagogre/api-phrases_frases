@@ -7,7 +7,10 @@ const routes = express.Router()
 
 routes.get('/', async (req, res) => {
     const collection_phrase = await Phrase.find({})
-    if (collection_phrase.length === 0) await pullPhrases()
+    if (collection_phrase.length === 0) {
+        await pullPhrases()
+        console.log('phrases written to db')
+    }
     res.send(`/phrases/random or /phrases/seven\n\n\nPhrases from: https://www.aluralingua.com.br/artigos/principais-frases-usadas-no-cotidiano-em-ingles`)
 })
 
