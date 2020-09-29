@@ -1,6 +1,6 @@
 const axios = require('axios')
 const cheerio = require('cheerio')
-const fs = require('fs')
+const Phrase = require('./models/Phrase')
 
 const pullPhrases = async () => {
     const res = await axios.get('https://www.aluralingua.com.br/artigos/principais-frases-usadas-no-cotidiano-em-ingles')
@@ -18,10 +18,7 @@ const pullPhrases = async () => {
         phrase['phrase'] = split_phrases[index][0].substring(0, split_phrases[index][0].length - 1)
         phrase['frase'] = split_phrases[index][1].substring(1)
     })
-
-    fs.writeFile("data.json", JSON.stringify(phrases, null, 2), (err) => {
-        if(err) throw err
-    })
+    Phrase.create(phrases)
 }
 
 module.exports = pullPhrases
