@@ -21,10 +21,10 @@
 <p>
 
 <h4 align="center">
-	🚧 Api Phrase2Frase (Node.js/express/cheerio/axios) 🚧 In Progress... 🚀
+	🚧 Api Phrase2Frase (Node/WebScraping/MongoDB) 🚧 In Progress... 🚀
 </h4>
 <h4 align="center">
-	  <img alt="edit" title="#Api-phrases" src="./assets/phrases_to_frases.gif">
+	  <img alt="edit" title="#Api-phrases" src="./assets/phrases_to_frases_mongoDB.gif">
 </h4>
 
 <p align="center">
