@@ -8,7 +8,7 @@ const randomPhrase = async (req, res) => {
 }
 
 const randomPhraseSeven = async (req, res) => {
-  const phrase = await Phrase.find({}, {__v:0,_id:0})
+    const phrase = await Phrase.find({}, {__v:0,_id:0})
   const random_phrase_seven = randomN(phrase, 7)
   res.json(random_phrase_seven)
 }
