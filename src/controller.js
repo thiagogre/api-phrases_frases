@@ -1,13 +1,15 @@
-const phrases = require('../data.json')
+const Phrase = require('./models/Phrase')
 const randomN = require('./utils/random_number')
 
 const random_phrase = (req, res) => {
-  const random_phrase = phrases[Math.floor(Math.random() * phrases.length)]
+  const phrase = await Phrase.find({})
+  const random_phrase = phrase[Math.floor(Math.random() * phrase.length)]
   res.json(random_phrase)
 }
 
 const random_phrase_seven = (req, res) => {
-    const random_phrase_seven = randomN(phrases, 7)
+    const phrase = await Phrase.find({})
+    const random_phrase_seven = randomN(phrase, 7)
     res.json(random_phrase_seven)
 }
 
