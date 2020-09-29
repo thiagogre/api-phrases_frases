@@ -18,5 +18,8 @@
     "mongoose": "^5.10.3",
     "nodemon": "^2.0.4",
     "standard": "^14.3.4"
+  },
+  "devDependencies": {
+    "lint-staged": "^10.4.0"
   }
 }
