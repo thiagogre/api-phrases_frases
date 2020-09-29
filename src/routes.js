@@ -5,7 +5,8 @@ const { random_phrase_seven, random_phrase } = require('./controller')
 const routes = express.Router()
 
 routes.get('/', async (req, res) => {
-    await pullPhrases()
+    const collection_phrase = await Phrase.find({})
+    if (collection_phrase.length === 0) await pullPhrases()
     res.send(`/phrases/random or /phrases/seven\n\n\nPhrases from: https://www.aluralingua.com.br/artigos/principais-frases-usadas-no-cotidiano-em-ingles`)
 })
 
