@@ -1,10 +1,14 @@
 const express = require('express')
 const routes = require('./routes')
 const mongoose = require('mongoose')
+require('dotenv').config();
 
 const app = express()
 
-mongoose.connect(`mongodb+srv://dev:u6CeJtS6YL9czFFP@developer.kuj4m.gcp.mongodb.net/database?retryWrites=true&w=majority`, { 
+const name = process.env.DB_NAME
+const pass = process.env.DB_PASSWORD
+
+mongoose.connect(`mongodb+srv://dev:${pass}@developer.kuj4m.gcp.mongodb.net/${name}?retryWrites=true&w=majority`, { 
     useNewUrlParser: true,
     useUnifiedTopology: true
 }).then(() => {
