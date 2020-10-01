@@ -6,19 +6,11 @@ const pullPhrases = async () => {
   const res = await axios.get('https://www.aluralingua.com.br/artigos/principais-frases-usadas-no-cotidiano-em-ingles')
   let phrases = []
   const $ = cheerio.load(res.data)
-  $('.cosmos-container > ul > li > p').each((index, element) => {
+  $('.cosmos-container > ul > li > p').each((id, element) => {
     const phrase = $(element).text()
-    phrases[index] = {"id":index, phrase}
+    const phrasesEnglishAndPortuguese = phrase.includes('-') ? phrase.split('-'):phrase.split('–')
+    phrases.push({id, phrase: phrasesEnglishAndPortuguese[0], frase: phrasesEnglishAndPortuguese[1]})
   })
-
-  const store_items = phrases.map(phrase => (phrase['phrase']))
-  const split_phrases = store_items.map(item => item.includes('-') ? item.split('-'):item.split('–'))
-
-  phrases.forEach((phrase, index) => {
-    phrase['phrase'] = split_phrases[index][0].substring(0, split_phrases[index][0].length - 1)
-    phrase['frase'] = split_phrases[index][1].substring(1)
-  })
-  
   Phrase.create(phrases)
 }
 
