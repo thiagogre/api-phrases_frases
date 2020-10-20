@@ -1,16 +1,16 @@
-const randomN = (phrase_array, n) => {
-    const limit = phrase_array.length < n ? phrase_array.length : n
-    const randon_indices_set = new Set()
-  
-    while (randon_indices_set.size < limit) {
-      const random_index = Math.floor(Math.random() * phrase_array.length)
-      if (!randon_indices_set.has(random_index)) {
-        randon_indices_set.add(random_index)
-      }
+const randomN = (phraseArray, n) => {
+  const limit = phraseArray.length < n ? phraseArray.length : n
+  const randomIndicesSet = new Set()
+
+  while (randomIndicesSet.size < limit) {
+    const randomIndex = Math.floor(Math.random() * phraseArray.length)
+    if (!randomIndicesSet.has(randomIndex)) {
+      randomIndicesSet.add(randomIndex)
     }
-    return Array.from(randon_indices_set).map(random_index => {
-      return phrase_array[random_index]
-    })
+  }
+  return Array.from(randomIndicesSet).map(randomIndex => {
+    return phraseArray[randomIndex]
+  })
 }
 
 module.exports = randomN
