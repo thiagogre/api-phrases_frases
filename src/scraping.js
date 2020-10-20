@@ -9,7 +9,7 @@ const pullPhrases = async () => {
   $('.cosmos-container > ul > li > p').each((id, element) => {
     const phrase = $(element).text()
     const phrasesEnglishAndPortuguese = phrase.includes('-') ? phrase.split('-') : phrase.split('–')
-    phrases.push({id, phrase: phrasesEnglishAndPortuguese[0].trim(), frase: phrasesEnglishAndPortuguese[1].trim()})
+    phrases.push({ id, phrase: phrasesEnglishAndPortuguese[0].trim(), frase: phrasesEnglishAndPortuguese[1].trim() })
   })
   Phrase.create(phrases)
 }
