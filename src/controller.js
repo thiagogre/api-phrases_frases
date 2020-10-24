@@ -3,8 +3,9 @@ const randomN = require('./utils/random_number')
 const pullPhrases = require('./scraping')
 
 const randomPhrase = async (req, res) => {
+  const { quantity } = req.query
   const phrase = await Phrase.find({}, { __v: 0, _id: 0, id: 0 })
-  const randomPhrase = phrase[Math.floor(Math.random() * phrase.length)]
+  const randomPhrase = randomN(phrase, quantity || 1 )
   return res.json(randomPhrase)
 }
 
