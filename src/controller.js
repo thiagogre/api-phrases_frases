@@ -5,6 +5,21 @@ const pullPhrases = require('./scraping')
 const randomPhrase = async (req, res) => {
   const { quantity } = req.query
   const phrase = await Phrase.find({}, { __v: 0, _id: 0, id: 0 })
+
+  if (isNaN(quantity)) { 
+    return res.json({
+      message: 'Invalid, quantity should be a number',
+      statusCode: '400' 
+    })
+  }
+
+  if (quantity > phrase.length || quantity < 0) {
+    return res.json({
+      message: `Invalid, quantity should be between 0 and ${phrase.length}`,
+      statusCode: '400'
+    })
+  }
+  
   const randomPhrase = randomN(phrase, quantity || 1 )
   return res.json(randomPhrase)
 }
