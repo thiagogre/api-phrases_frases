@@ -1,5 +1,6 @@
 const express = require('express')
 const routes = require('./routes')
+const cors = require('cors')
 const mongoose = require('mongoose')
 const dotenv = require('dotenv')
 
@@ -18,4 +19,7 @@ mongoose.connect(`mongodb+srv://dev:${pass}@developer.kuj4m.gcp.mongodb.net/${na
   console.log(err)
 })
 
-server.use(express.json()).use(routes).listen(3000, () => console.log('listening on 3000'))
+server.use(express.json())
+.use(cors())
+.use(routes)
+.listen(3000, () => console.log('listening on 3000'))
