@@ -22,4 +22,4 @@ mongoose.connect(`mongodb+srv://dev:${pass}@developer.kuj4m.gcp.mongodb.net/${na
 server.use(express.json())
 .use(cors())
 .use(routes)
-.listen(3000, () => console.log('listening on 3000'))
+.listen(process.env.PORT || 3000)
