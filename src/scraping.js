@@ -11,7 +11,7 @@ const pullPhrases = async () => {
     const phrasesEnglishAndPortuguese = phrase.includes('-') ? phrase.split('-') : phrase.split('–')
     phrases.push({ id, phrase: phrasesEnglishAndPortuguese[0].trim(), frase: phrasesEnglishAndPortuguese[1].trim() })
   })
-  Phrase.create(phrases)
+  return await Phrase.create(phrases)
 }
 
 module.exports = pullPhrases

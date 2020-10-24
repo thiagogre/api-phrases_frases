@@ -1,19 +1,9 @@
 const express = require('express')
-const pullPhrases = require('./scraping')
-const Phrase = require('./models/Phrase')
-const { randomPhraseSeven, randomPhrase } = require('./controller')
+const { randomPhraseSeven, randomPhrase, collectionPhrase } = require('./controller')
 
 const routes = express.Router()
 
-routes.get('/', async (req, res) => {
-  const collectionPhrase = await Phrase.find({})
-  if (collectionPhrase.length === 0) {
-    await pullPhrases()
-    console.log('phrases written to db')
-  }
-  res.send('/phrases/random or /phrases/seven\n\n\nPhrases from: https://www.aluralingua.com.br/artigos/principais-frases-usadas-no-cotidiano-em-ingles')
-})
-
+routes.post('/', collectionPhrase)
 routes.get('/phrases/random', randomPhrase)
 routes.get('/phrases/seven', randomPhraseSeven)
 
