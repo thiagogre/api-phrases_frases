@@ -9,12 +9,6 @@ const randomPhrase = async (req, res) => {
   return res.json(randomPhrase)
 }
 
-const randomPhraseSeven = async (req, res) => {
-  const phrase = await Phrase.find({}, { __v: 0, _id: 0, id: 0 })
-  const randomPhraseSeven = randomN(phrase, 7)
-  return res.json(randomPhraseSeven)
-}
-
 const collectionPhrase = async (req, res) => {
   const collectionPhrase = await Phrase.find({})
   if (collectionPhrase.length === 0) {
@@ -33,6 +27,5 @@ const collectionPhrase = async (req, res) => {
 
 module.exports = {
   randomPhrase,
-  randomPhraseSeven,
   collectionPhrase
 }
