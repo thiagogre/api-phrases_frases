@@ -24,5 +24,13 @@
   },
   "devDependencies": {
     "lint-staged": "^10.4.0"
+  },
+  "engine": {
+    "name": "api-phrases_frases",
+    "description": "",
+    "version": "1.0.0",
+    "engines": {
+      "node": "12.x"
+    }
   }
 }
