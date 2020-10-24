@@ -41,6 +41,11 @@
 
 The idea about this API is help Portuguese speakers study English.
 
+Access [Phrase2Frase](https://phrases2frases.herokuapp.com/random)
+Or https://phrases2frases.herokuapp.com/random?quantity=VALUE
+
+Example: https://phrases2frases.herokuapp.com/random?quantity=3
+
 ---
 
 ## ⚙️ Tech Stack
