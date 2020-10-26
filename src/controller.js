@@ -57,7 +57,16 @@ const collectionPhrase = async (req, res) => {
   }
 }
 
+const allPhrases = async (req, res) => {
+  const allPhrases = await Phrase.find({}, { __v: 0, _id: 0, id: 0 })
+  return res.json({
+    body: allPhrases,
+    statusCode: '200'
+  })
+}
+
 module.exports = {
   randomPhrase,
-  collectionPhrase
+  collectionPhrase,
+  allPhrases
 }
